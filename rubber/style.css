@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  border: 1px solid;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper__img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  padding: 10px 10px;
+  width: 20%;
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .image {
+    width: calc(100% / 3);
+  }
+}
